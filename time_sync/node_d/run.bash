@@ -1,8 +1,8 @@
 #!/bin/bash
 
 python3 peer_node.py \
-	  --name D --listen 0.0.0.0 5002 \
-	  --peers A@localhost:5000 B@localhost:5001 D@localhost:5002 \
-	  --logger localhost 9999 \
-	  --offset-ms -600
-
+	  --name A --listen 0.0.0.0 5002 \
+	  --peers A@192.168.0.2:5000 B@192.168.0.3:5001 D@192.168.0.5:5002 \
+	  --logger 192.168.0.4 9999 \
+	  --offset-ms 600 \
+	  --initiate-broadcast --msg "Hello from D"

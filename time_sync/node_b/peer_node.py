@@ -1,1 +1,1 @@
-../program/peer_node.py
+C:/Kuliah/SISTER/TUGAS_1/time_sync/program/peer_node.py
